@@ -6,7 +6,7 @@ using UnityEngine;
 public class Burning : MonoBehaviour
 {
     private const int MAX_BURN_TIME = 5;
-    private const int DAMAGE_PER_SECOND = 100;
+    private const int DAMAGE_PER_SECOND = 5;
 
     public float mainTimer;
     public float timer;

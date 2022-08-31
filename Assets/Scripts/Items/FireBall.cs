@@ -17,7 +17,7 @@ public class FireBall : IItemClass
     void Update()
     {
         if (m_taken && Input.GetMouseButton(m_slotNumber))
-            m_em.rate = 5;
+            m_em.rate = 10;
         else
             m_em.rate = 0;
     }

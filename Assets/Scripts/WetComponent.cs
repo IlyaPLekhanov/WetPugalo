@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class WetComponent : MonoBehaviour
@@ -27,6 +28,9 @@ public class WetComponent : MonoBehaviour
     public void IncreaseWet(int _value)
     {
         m_currentWet += _value;
+        if (m_currentWet > MAX_WET)
+            m_currentWet = MAX_WET;
+        
         SetColor(Color.blue);
         m_wetBar.SetWetBarValue(m_currentWet);
 

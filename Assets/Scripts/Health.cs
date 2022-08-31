@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     {
         m_currentHealth = m_maxHealth;
         m_healthBar.SetMaxHealth(m_maxHealth);
+        m_healthBar.SetHealthBarValue(m_currentHealth);
     }
 
     public void ReduceHealth(int _health)
@@ -31,5 +32,6 @@ public class Health : MonoBehaviour
     {
         gameObject.SetActive(true);
         m_currentHealth = m_maxHealth;
+        m_healthBar.SetHealthBarValue(m_currentHealth);
     }
 }
